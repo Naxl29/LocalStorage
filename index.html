@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Gestor</h2>
+      <nav>
+        <button id="filtro-todas" class="filtro activo" data-filtro="todas">Todas</button>
+        <button id="filtro-completadas" class="filtro" data-filtro="completadas">Completadas</button>
+        <button id="filtro-pendientes" class="filtro" data-filtro="pendientes">Pendientes</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Lista de Tareas</h1>
+        <div class="nuevo">
+          <input type="text" id="tareaInput" placeholder="Escribe una nueva tarea...">
+          <button id="agregarBtn">+</button>
+        </div>
+      </header>
+
+      <section id="tareasContainer" class="tareas-container">
+        <ul id="listaTareas"></ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
